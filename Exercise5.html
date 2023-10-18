@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-5 Form</title>
+    <style>
+      label,
+      input {
+        margin: 5px 0;
+      }
+      label {
+        font-weight: bolder;
+      }
+      form {
+        border: 1px solid black;
+        width: 400px;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Registeration form</h2>
+    <form>
+      <div>
+        <label for="first">First Name</label>
+        <input
+          type="text"
+          name="first"
+          id="first"
+          placeholder="Enter your first name"
+        />
+      </div>
+      <div>
+        <label for="last">Last Name</label>
+        <input
+          type="text"
+          name="last"
+          id="last"
+          placeholder="Enter your last name"
+        />
+      </div>
+      <div>
+        <label for="email">E-mail Address</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your e-mail ID"
+          min="3"
+        />
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          min="1"
+          max="150"
+          maxlength="3"
+        />
+      </div>
+      <div>
+        <label for="email">Phone number</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          maxlength="10"
+          placeholder="Enter your age"
+        />
+      </div>
+      <div>
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          minlength="8"
+          placeholder="Enter your password"
+        />
+      </div>
+      <div>
+        <label for="cpass"> Confirm password</label>
+        <input
+          type="password"
+          name="cpass"
+          id="cpass"
+          minlength="8"
+          placeholder="Confirm your password"
+        />
+      </div>
+      <div>
+        <label for="gender"
+          >Gender :
+          <input type="radio" value="Male" id="male" name="gender" />
+          <label for="male">Male</label>
+          <input type="radio" value="Female" id="Female" name="gender" />
+          <label for="female">Female</label>
+          <input type="radio" value="Other" id="other" name="gender" />
+          <label for="other">Other</label>
+        </label>
+      </div>
+      <div>
+        <label for="terms">Terms: </label>
+        <input type="checkbox" name="conditionCheck" id="conditionCheck" />
+        <label for="conditionCheck" style="font-weight: 400"
+          >I agree to terms and conditions</label
+        >
+      </div>
+      <button id="Register" style="margin-top: 5px">Register</button>
+    </form>
+  </body>
+</html>
